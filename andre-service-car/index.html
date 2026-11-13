@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andre Service Car | Oficina mec&#226;nica em Bel&#233;m</title>
+<meta name="description" content="Oficina mec&#226;nica de confian&#231;a em Bel&#233;m. Orçamento rápido pelo WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f2742">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{--tinta:#0f2742;--texto:#3a4a5e;--suave:#f4f6f9;--linha:#e3e8ef;--wa:#25d366;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--texto);background:#fff;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:#fff7d6;color:#5c4400;font-size:14px;padding:10px 0;border-bottom:1px solid #f0dc8a}
+.demo .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.demo a{background:#5c4400;color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;font-weight:600;white-space:nowrap}
+.topo{background:var(--tinta);color:#fff}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.marca{font-weight:800;font-size:19px;letter-spacing:-.01em;line-height:1.2}
+.topo .fone{text-decoration:none;font-weight:600;white-space:nowrap;opacity:.9}
+.hero{background:radial-gradient(900px 400px at 85% -10%,color-mix(in srgb,var(--cor) 45%,transparent),transparent 70%),linear-gradient(180deg,var(--tinta),#0a1b30);color:#fff;padding:56px 0 72px}
+.pill{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cor);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(30px,6vw,50px);line-height:1.1;letter-spacing:-.02em;max-width:17ch;text-wrap:balance}
+.hero p.sub{font-size:clamp(17px,2.4vw,20px);color:#c9d5e3;max-width:52ch;margin:18px 0 28px}
+.botoes{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;padding:15px 24px;border-radius:12px;font-size:17px}
+.btn.wa{background:var(--wa);color:#04361b;box-shadow:0 8px 24px rgba(37,211,102,.3)}
+.btn.sec{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn svg{width:22px;height:22px;flex:none}
+.nota{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#c9d5e3;text-decoration:none}
+.nota b{color:#ffd54a;font-size:18px}
+.faixa{background:var(--suave);border-bottom:1px solid var(--linha)}
+.faixa ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 24px;padding:20px 0}
+.faixa li{display:flex;gap:10px;align-items:center;font-weight:600;color:var(--tinta)}
+.faixa li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--cor);flex:none}
+section{padding:64px 0}
+h2{font-size:clamp(24px,4vw,34px);color:var(--tinta);letter-spacing:-.02em;line-height:1.2;margin-bottom:8px}
+.lead{max-width:60ch;margin-bottom:32px}
+.cards{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.cards li{border:1px solid var(--linha);border-radius:16px;padding:24px;border-top:4px solid var(--cor);background:#fff}
+.cards h3{color:var(--tinta);font-size:18px;margin-bottom:6px}
+.cards p{font-size:15px}
+.passos{background:var(--suave)}
+.passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.passos li{counter-increment:p}
+.passos li::before{content:counter(p);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--tinta);color:#fff;font-weight:800;margin-bottom:12px}
+.passos h3{color:var(--tinta);font-size:18px;margin-bottom:4px}
+.local{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:start}
+.local dl{display:grid;gap:18px}
+.local dt{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a8799}
+.local dd{color:var(--tinta);font-weight:600;font-size:17px}
+.local dd a{text-decoration:underline;text-underline-offset:3px}
+.mapa{width:100%;height:320px;border:0;border-radius:16px;background:var(--suave)}
+.final{background:var(--tinta);color:#fff;text-align:center}
+.final h2{color:#fff;margin-bottom:12px}
+.final p{color:#c9d5e3;margin-bottom:26px}
+.final .botoes{justify-content:center}
+footer{padding:28px 0;font-size:14px;color:#7a8799;text-align:center}
+.flut{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:9}
+.flut svg{width:30px;height:30px;color:#04361b}
+@media(max-width:520px){.topo .fone{display:none}.btn{width:100%;justify-content:center}section{padding:48px 0}}
+</style>
+</head>
+<body style="--cor:#f87171">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.200 8.200 0 0 1-4.200-1.150l-.3-.18-3 .78.800-2.900-.2-.300A8.200 8.200 0 1 1 12 20.200Zm4.500-6.100c-.25-.120-1.470-.720-1.700-.800-.23-.090-.390-.120-.560.120-.160.250-.640.800-.780.970-.140.160-.290.180-.530.060a6.700 6.700 0 0 1-3.340-2.920c-.250-.430.250-.400.720-1.340.080-.160.040-.300-.020-.430-.060-.120-.560-1.340-.760-1.840-.200-.480-.410-.420-.560-.420h-.480a.920.920 0 0 0-.660.310 2.800 2.800 0 0 0-.870 2.070c0 1.220.890 2.400 1.010 2.570.120.160 1.750 2.670 4.230 3.740 1.580.680 2.200.740 2.980.620.480-.070 1.470-.600 1.680-1.180.200-.580.200-1.080.140-1.180-.060-.110-.220-.170-.470-.290Z"/></symbol></svg>
+
+
+<div class="demo"><div class="wrap">
+  <span><strong>Modelo de demonstração</strong> feito para Andre Service Car. Textos, serviços, cores e fotos são exemplos e serão ajustados com você.</span>
+  <a href="https://wa.me/5591985530796?text=Oi!%20Vi%20o%20modelo%20de%20site%20feito%20para%20Andre%20Service%20Car%20e%20quero%20saber%20mais.">Quero esse site</a>
+</div></div>
+
+
+<header class="topo"><div class="wrap">
+  <span class="marca">Andre Service Car</span>
+  <a class="fone" href="tel:+5591981063310">(91) 98106-3310</a>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <span class="pill">Oficina mec&#226;nica · Bel&#233;m</span>
+  <h1>Oficina mec&#226;nica de confian&#231;a em Bel&#233;m</h1>
+  <p class="sub">Revis&#227;o, freios, suspens&#227;o e motor, com or&#231;amento explicado antes de qualquer servi&#231;o.</p>
+  <div class="botoes">
+    <a class="btn wa" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro."><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
+    <a class="btn sec" href="tel:+5591981063310">Ligar (91) 98106-3310</a>
+  </div>
+  <a class="nota" href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener"><b>★ 4,5</b> <span>44 avaliações no Google</span></a>
+</div></div>
+
+<div class="faixa"><div class="wrap"><ul>
+  <li>Orçamento sem compromisso</li>
+  <li>Atendimento em Bel&#233;m e região</li>
+  <li>Resposta rápida pelo WhatsApp</li>
+</ul></div></div>
+
+<section><div class="wrap">
+  <h2>Serviços</h2>
+  <p class="lead">Conte o que você precisa e receba o orçamento direto no WhatsApp.</p>
+  <ul class="cards"><li><h3>Revis&#227;o e troca de &#243;leo</h3><p>Manuten&#231;&#227;o preventiva para rodar tranquilo.</p></li><li><h3>Freios</h3><p>Pastilhas, discos e fluido.</p></li><li><h3>Suspens&#227;o e dire&#231;&#227;o</h3><p>Amortecedores, buchas e alinhamento.</p></li><li><h3>Motor e inje&#231;&#227;o</h3><p>Diagn&#243;stico por scanner e reparo.</p></li></ul>
+</div></section>
+
+<section class="passos"><div class="wrap">
+  <h2>Como funciona</h2>
+  <p class="lead">Simples e sem enrolação.</p>
+  <ol>
+    <li><h3>Chame no WhatsApp</h3><p>Explique o problema e, se puder, mande uma foto.</p></li>
+    <li><h3>Receba o orçamento</h3><p>Você fica sabendo o valor e o prazo antes de fechar.</p></li>
+    <li><h3>Serviço agendado</h3><p>Combinamos o melhor dia e horário para o atendimento.</p></li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Onde estamos</h2>
+  <p class="lead">Atendemos Bel&#233;m e região.</p>
+  <div class="local">
+    <dl>
+      <div><dt>Endereço</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Passagem G, 32</a></dd></div>
+      
+      <div><dt>Telefone e WhatsApp</dt><dd><a href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro.">(91) 98106-3310</a></dd></div>
+    </dl>
+    <iframe class="mapa" src="https://www.google.com/maps?q=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m&amp;output=embed" loading="lazy" title="Mapa de Andre Service Car" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Precisa de atendimento?</h2>
+  <p>Fale agora com Andre Service Car e peça seu orçamento.</p>
+  <div class="botoes"><a class="btn wa" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro."><svg><use href="#wa"/></svg>Chamar no WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Andre Service Car · Bel&#233;m</div></footer>
+<a class="flut" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro." aria-label="Chamar no WhatsApp"><svg><use href="#wa"/></svg></a>
+</body>
+</html>
