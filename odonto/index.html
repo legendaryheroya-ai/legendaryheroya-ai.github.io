@@ -57,7 +57,9 @@
   .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
   .hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35)}
   .badges{display:flex;gap:26px;flex-wrap:wrap;margin-top:48px;font-size:.92rem;opacity:.9}
-  .badges b{display:block;font-size:1.6rem;font-family:var(--font-head);color:var(--accent)}
+  .badges b{display:block;font-size:1.6rem;font-family:var(--font-head);color:color-mix(in srgb,var(--accent) 65%,#fff)}
+  .hero{text-shadow:0 1px 12px rgba(0,0,0,.35)}
+  @media(max-width:720px){.hero::before{background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.7) 45%,rgba(0,0,0,.88) 100%)}}
 
   /* features */
   .grid{display:grid;gap:20px}
@@ -202,6 +204,7 @@
 <footer><div class="wrap">
   <span>© <span data-year></span> <span data-k="name"></span>. Todos os direitos reservados.</span>
   <span data-credit></span>
+  <span data-legal style="flex-basis:100%"></span>
 </div></footer>
 
 <a class="wa-float" data-wa aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg></a>
@@ -280,9 +283,14 @@ const SITE = {
       { name:"Ana P.", meta:"Google", text:"Clínica linda, pontual e com preço justo. Levo a família toda." }
     ]
   },
+  // exigido pelo CFO em sites de odontologia: responsável técnico com o CRO e inscrição da clínica
+  legal: {
+    responsavel: "Dra. Ana Souza", cro: "CRO-PA 00000",
+    clinica: "Clínica inscrita no CRO-PA sob o nº 0000"
+  },
   contact: {
-    address: "Rua Augusta, 500 — Consolação, São Paulo - SP",
-    phone: "(11) 99999-9999", instagram: "sorrisopleno",
+    address: "Av. Nazaré, 500 — Nazaré, Belém - PA",
+    phone: "(91) 99999-9999", instagram: "sorrisopleno",
     hours: [["Seg a Sex","08h às 19h"],["Sábado","08h às 13h"],["Domingo","Fechado"]]
   },
   band: { title:"Sua avaliação é gratuita", text:"Agende agora e descubra o plano ideal para o seu sorriso.", cta:"Quero agendar" }
@@ -316,6 +324,7 @@ const SITE = {
   $('[data-year]').textContent = new Date().getFullYear();
   $('#hero').style.backgroundImage = `url('${C.hero.image}')`;
   $('[data-credit]').innerHTML = C.credit || '';
+  if (C.legal) $('[data-legal]').textContent = `Responsável técnica: ${C.legal.responsavel} · ${C.legal.cro}. ${C.legal.clinica}.`;
 
   $('[data-badges]').innerHTML = C.hero.badges.map(b=>`<div><b>${esc(b[0])}</b>${esc(b[1])}</div>`).join('');
   $('[data-features]').innerHTML = C.features.items.map(f=>`<div class="card reveal"><div class="ico">${f.icon}</div><h3>${esc(f.title)}</h3><p>${esc(f.text)}</p></div>`).join('');
@@ -353,6 +362,7 @@ const SITE = {
     <div class="info-row"><div class="ico">📞</div><div><h4>Telefone / WhatsApp</h4>${esc(C.contact.phone)}</div></div>
     ${C.contact.instagram?`<div class="info-row"><div class="ico">📸</div><div><h4>Instagram</h4><a href="https://instagram.com/${esc(C.contact.instagram)}" target="_blank" rel="noopener">@${esc(C.contact.instagram)}</a></div></div>`:''}
     <div class="info-row"><div class="ico">🕒</div><div style="flex:1"><h4>Horário</h4><table class="hours">${hours}</table></div></div>
+    ${C.legal?`<div class="info-row"><div class="ico">🩺</div><div><h4>Responsável técnica</h4>${esc(C.legal.responsavel)} · ${esc(C.legal.cro)}</div></div>`:''}
     <div><a class="btn" href="${waUrl}" target="_blank" rel="noopener">${esc(C.hero.cta)}</a></div>`;
   $('[data-map]').src = `https://www.google.com/maps?q=${encodeURIComponent(C.contact.mapQuery||C.contact.address)}&output=embed`;
 
