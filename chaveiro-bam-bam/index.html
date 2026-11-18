@@ -6,65 +6,136 @@
 <title>Chaveiro Bam Bam | Chaveiro em Ananindeua</title>
 <meta name="description" content="Chaveiro em Ananindeua para casa, com&#233;rcio e carro. Orçamento rápido pelo WhatsApp.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0f2742">
+<meta name="theme-color" content="#0a1626">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/img/chaveiro.jpg">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{--tinta:#0f2742;--texto:#3a4a5e;--suave:#f4f6f9;--linha:#e3e8ef;--wa:#25d366;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--texto);background:#fff;overflow-x:hidden}
+body{--fundo:#0a1626;--fundo2:#0e1d33;--card:#12243d;--linha:rgba(148,178,220,.16);--texto:#c3d0e2;--branco:#fff;--azul:#2f6fe4;--wa:#25d366;font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--texto);background:var(--fundo);overflow-x:hidden}
 a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.demo{background:#fff7d6;color:#5c4400;font-size:14px;padding:10px 0;border-bottom:1px solid #f0dc8a}
+svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.marca{font-family:Montserrat,system-ui,sans-serif;color:var(--branco)}
+.demo{background:#fff4c2;color:#4d3a00;font-size:14px;padding:9px 0}
 .demo .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.demo a{background:#5c4400;color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;font-weight:600;white-space:nowrap}
-.topo{background:var(--tinta);color:#fff}
-.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
-.marca{font-weight:800;font-size:19px;letter-spacing:-.01em;line-height:1.2}
-.topo .fone{text-decoration:none;font-weight:600;white-space:nowrap;opacity:.9}
-.hero{background:radial-gradient(900px 400px at 85% -10%,color-mix(in srgb,var(--cor) 45%,transparent),transparent 70%),linear-gradient(180deg,var(--tinta),#0a1b30);color:#fff;padding:56px 0 72px}
-.pill{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cor);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:6px 12px;border-radius:999px;margin-bottom:18px}
-h1{font-size:clamp(30px,6vw,50px);line-height:1.1;letter-spacing:-.02em;max-width:17ch;text-wrap:balance}
-.hero p.sub{font-size:clamp(17px,2.4vw,20px);color:#c9d5e3;max-width:52ch;margin:18px 0 28px}
-.botoes{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;padding:15px 24px;border-radius:12px;font-size:17px}
-.btn.wa{background:var(--wa);color:#04361b;box-shadow:0 8px 24px rgba(37,211,102,.3)}
-.btn.sec{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.demo a{background:#4d3a00;color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;font-weight:600;white-space:nowrap}
+.topo{position:sticky;top:0;z-index:20;background:rgba(10,22,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+.topo .wrap{display:flex;align-items:center;gap:28px;height:74px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;line-height:1.1;letter-spacing:-.01em;text-transform:uppercase;max-width:300px}
+.marca svg{width:34px;height:34px;color:var(--cor);flex:none;stroke-width:2.2}
+.menu{display:flex;gap:26px;margin-left:auto;list-style:none}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;color:#dbe5f3;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--cor)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-family:Montserrat,system-ui,sans-serif;padding:15px 26px;border-radius:12px;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
 .btn svg{width:22px;height:22px;flex:none}
-.nota{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#c9d5e3;text-decoration:none}
-.nota b{color:#ffd54a;font-size:18px}
-.faixa{background:var(--suave);border-bottom:1px solid var(--linha)}
-.faixa ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 24px;padding:20px 0}
-.faixa li{display:flex;gap:10px;align-items:center;font-weight:600;color:var(--tinta)}
-.faixa li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--cor);flex:none}
-section{padding:64px 0}
-h2{font-size:clamp(24px,4vw,34px);color:var(--tinta);letter-spacing:-.02em;line-height:1.2;margin-bottom:8px}
-.lead{max-width:60ch;margin-bottom:32px}
-.cards{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.cards li{border:1px solid var(--linha);border-radius:16px;padding:24px;border-top:4px solid var(--cor);background:#fff}
-.cards h3{color:var(--tinta);font-size:18px;margin-bottom:6px}
+.btn.cor{background:var(--cor);color:#0a1626;box-shadow:0 10px 30px color-mix(in srgb,var(--cor) 35%,transparent)}
+.btn.sec{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn.peq{padding:11px 18px;font-size:15px}
+.wa-ico{fill:currentColor;stroke:none}
+.hero{position:relative;overflow:hidden;background:var(--fundo)}
+.hero .foto{position:absolute;inset:0 0 0 38%;background-size:cover;background-position:center}
+.hero .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--fundo) 0%,rgba(10,22,38,.6) 20%,rgba(10,22,38,0) 55%),linear-gradient(0deg,var(--fundo) 0%,transparent 25%)}
+.hero .wrap{position:relative;padding-top:64px;padding-bottom:84px}
+.selo{display:inline-flex;align-items:center;gap:8px;background:rgba(47,111,228,.18);border:1px solid rgba(97,145,235,.45);color:#fff;font-weight:600;font-size:15px;padding:8px 16px;border-radius:999px;text-decoration:none;margin-bottom:22px}
+.selo .est{color:#ffc93c;font-size:18px;line-height:1}
+h1{font-size:clamp(34px,5.4vw,60px);line-height:1.06;letter-spacing:-.025em;max-width:15ch;font-weight:800;text-shadow:0 2px 18px rgba(10,22,38,.6)}
+h1 span{display:block;color:var(--cor)}
+.sub{font-size:clamp(17px,2.2vw,20px);color:#dbe5f3;max-width:44ch;margin:22px 0 32px;padding-left:16px;border-left:3px solid var(--azul)}
+.botoes{display:flex;gap:14px;flex-wrap:wrap}
+.foto-mob{display:none}
+.faixa{background:var(--fundo2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.faixa ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 28px;padding:22px 0}
+.faixa li{display:flex;gap:12px;align-items:center;color:#e4ecf7;font-weight:500;font-size:15px}
+.faixa li svg{width:26px;height:26px;color:var(--cor);flex:none}
+.faixa a{text-decoration:none}
+section{padding:80px 0}
+.titulo{text-align:center;margin-bottom:44px}
+.titulo h2{display:inline-flex;align-items:center;gap:22px;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.02em;line-height:1.2}
+.titulo h2::before,.titulo h2::after{content:"";width:clamp(28px,8vw,120px);height:3px;background:var(--azul);border-radius:2px}
+.titulo p{margin-top:10px}
+.cards{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.cards li{display:flex;flex-direction:column;gap:16px;background:linear-gradient(180deg,var(--card),#0f1f36);border:1px solid var(--linha);border-radius:18px;padding:26px 24px}
+.cards .ico{display:grid;place-items:center;width:58px;height:58px;border-radius:14px;background:color-mix(in srgb,var(--cor) 14%,transparent);border:1px solid color-mix(in srgb,var(--cor) 35%,transparent)}
+.cards .ico svg{width:30px;height:30px;color:var(--cor)}
+.cards h3{font-size:19px;line-height:1.25;margin-bottom:6px}
 .cards p{font-size:15px}
-.passos{background:var(--suave)}
-.passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
-.passos li{counter-increment:p}
-.passos li::before{content:counter(p);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--tinta);color:#fff;font-weight:800;margin-bottom:12px}
-.passos h3{color:var(--tinta);font-size:18px;margin-bottom:4px}
-.local{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:start}
-.local dl{display:grid;gap:18px}
-.local dt{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a8799}
-.local dd{color:var(--tinta);font-weight:600;font-size:17px}
-.local dd a{text-decoration:underline;text-underline-offset:3px}
-.mapa{width:100%;height:320px;border:0;border-radius:16px;background:var(--suave)}
-.final{background:var(--tinta);color:#fff;text-align:center}
-.final h2{color:#fff;margin-bottom:12px}
-.final p{color:#c9d5e3;margin-bottom:26px}
+.passos{background:var(--fundo2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.passos li{counter-increment:p;position:relative;padding:26px 24px;border-radius:18px;border:1px solid var(--linha);background:var(--fundo)}
+.passos li::before{content:counter(p);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--cor);color:#0a1626;font:800 18px Montserrat,sans-serif;margin-bottom:14px}
+.passos h3{font-size:18px;margin-bottom:4px}
+.local{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:28px;align-items:stretch}
+.info{display:grid;gap:14px;align-content:start}
+.info div{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:18px 20px}
+.info svg{width:26px;height:26px;color:var(--cor);flex:none;margin-top:2px}
+.info dt{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#8ea3bf}
+.info dd{color:#fff;font-weight:600;font-size:17px}
+.info dd a{text-decoration:underline;text-underline-offset:3px}
+.mapa{width:100%;min-height:340px;height:100%;border:0;border-radius:18px;background:var(--card);filter:saturate(.85)}
+.final{position:relative;overflow:hidden;text-align:center;background:radial-gradient(700px 300px at 50% 0%,color-mix(in srgb,var(--cor) 22%,transparent),transparent 70%),var(--fundo2);border-top:1px solid var(--linha)}
+.final h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:12px}
+.final p{margin-bottom:28px}
 .final .botoes{justify-content:center}
-footer{padding:28px 0;font-size:14px;color:#7a8799;text-align:center}
-.flut{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:9}
-.flut svg{width:30px;height:30px;color:#04361b}
-@media(max-width:520px){.topo .fone{display:none}.btn{width:100%;justify-content:center}section{padding:48px 0}}
+footer{padding:26px 0;font-size:14px;color:#7f93ae;text-align:center;border-top:1px solid var(--linha)}
+.barra{height:5px;background:linear-gradient(90deg,var(--azul) 0%,var(--azul) 45%,transparent 45%)}
+.flut{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.35);z-index:30}
+.flut svg{width:32px;height:32px;color:#04361b}
+@media(max-width:900px){
+  .menu{display:none}
+  .topo .btn.peq{margin-left:auto}
+  .hero .foto{display:none}
+  .hero .wrap{padding-top:36px;padding-bottom:0}
+  .foto-mob{display:block;margin:30px -20px 0;height:250px;background-size:cover;background-position:center;position:relative}
+  .foto-mob::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--fundo) 0%,transparent 35%,transparent 70%,var(--fundo) 100%)}
+  .local{grid-template-columns:1fr}
+  .mapa{height:300px;min-height:0}
+}
+@media(max-width:560px){
+  .topo .wrap{height:64px;gap:12px}
+  .marca{font-size:15px}
+  .marca svg{width:28px;height:28px}
+  .topo .btn.peq span{display:none}
+  .topo .btn.peq{padding:10px 12px}
+  .botoes .btn{width:100%}
+  .hero .btn.cor{background:var(--wa);color:#04361b;box-shadow:0 10px 30px rgba(37,211,102,.3)}
+  section{padding:56px 0}
+  .titulo h2{gap:12px}
+}
 </style>
 </head>
 <body style="--cor:#fbbf24">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.200 8.200 0 0 1-4.200-1.150l-.3-.18-3 .78.800-2.900-.2-.300A8.200 8.200 0 1 1 12 20.200Zm4.500-6.100c-.25-.120-1.470-.720-1.700-.800-.23-.090-.390-.120-.560.120-.160.250-.640.800-.780.970-.140.160-.290.180-.530.060a6.700 6.700 0 0 1-3.340-2.920c-.250-.430.250-.400.720-1.340.080-.160.040-.300-.020-.430-.060-.120-.560-1.340-.760-1.840-.200-.480-.410-.420-.560-.420h-.480a.920.920 0 0 0-.660.310 2.800 2.800 0 0 0-.870 2.070c0 1.220.890 2.400 1.010 2.570.120.160 1.750 2.670 4.230 3.740 1.580.680 2.200.740 2.980.620.480-.070 1.470-.600 1.680-1.180.200-.580.200-1.080.140-1.180-.060-.110-.220-.170-.470-.290Z"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="wa" viewBox="0 0 24 24"><path class="wa-ico" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48a.92.92 0 0 0-.66.31 2.8 2.8 0 0 0-.87 2.07c0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.23 3.74 1.58.68 2.2.74 2.98.62.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></symbol>
+<symbol id="i-raio" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+<symbol id="i-bateria" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V5h3v2M14 7V5h3v2M6.5 13.5h4M15.5 11.5v4M13.5 13.5h4"/></symbol>
+<symbol id="i-diag" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M6 11h3l2-4 2 7 2-3h3M8 21h8M12 17v4"/></symbol>
+<symbol id="i-lampada" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-ferramenta" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+<symbol id="i-oleo" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+<symbol id="i-freio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></symbol>
+<symbol id="i-mola" viewBox="0 0 24 24"><path d="M8 3h8M8 21h8M8 6l8 2-8 2 8 2-8 2 8 2-8 2"/></symbol>
+<symbol id="i-floco" viewBox="0 0 24 24"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1 19.1 4.9M9 3l3 3 3-3M9 21l3-3 3 3"/></symbol>
+<symbol id="i-termometro" viewBox="0 0 24 24"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/></symbol>
+<symbol id="i-limpeza" viewBox="0 0 24 24"><path d="M11 3l1.8 4.2L17 9l-4.2 1.8L11 15l-1.8-4.2L5 9l4.2-1.8zM18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8z"/></symbol>
+<symbol id="i-chave" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></symbol>
+<symbol id="i-cadeado" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></symbol>
+<symbol id="i-porta" viewBox="0 0 24 24"><path d="M6 21V3h12v18M4 21h16M14.5 12h.01"/></symbol>
+<symbol id="i-carro" viewBox="0 0 24 24"><path d="M5 15l1.5-4.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 15M3 15h18v4H3zM6 19v2M18 19v2M7 17h.01M17 17h.01"/></symbol>
+<symbol id="i-carimbo" viewBox="0 0 24 24"><path d="M9 3h6v5l2 4H7l2-4zM5 12h14v4H5zM6 20h12"/></symbol>
+<symbol id="i-casa" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-5h4v5"/></symbol>
+<symbol id="i-predio" viewBox="0 0 24 24"><path d="M4 21V5l8-2v18M12 21V9l8 2v10M2 21h20M7 8h2M7 12h2M7 16h2M15 14h2M15 18h2"/></symbol>
+<symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-escudo" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-inseto" viewBox="0 0 24 24"><ellipse cx="12" cy="14" rx="5" ry="6"/><path d="M12 8V5M9 4l1.5 2M15 4l-1.5 2M7 12H3M21 12h-4M7 17l-3 2M17 17l3 2"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="i-fone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></symbol>
+<symbol id="i-seta" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+</svg>
 
 
 <div class="demo"><div class="wrap">
@@ -74,37 +145,44 @@ footer{padding:28px 0;font-size:14px;color:#7a8799;text-align:center}
 
 
 <header class="topo"><div class="wrap">
-  <span class="marca">Chaveiro Bam Bam</span>
-  <a class="fone" href="tel:+5591983500002">(91) 98350-0002</a>
+  <a class="marca" href="#inicio"><svg><use href="#i-chave"/></svg><span>Chaveiro Bam Bam</span></a>
+  <ul class="menu">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#como-funciona">Como funciona</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+  </ul>
+  <a class="btn cor peq" href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro."><svg><use href="#wa"/></svg><span>Falar no WhatsApp</span></a>
 </div></header>
 
-<main>
-<div class="hero"><div class="wrap">
-  <span class="pill">Chaveiro · Ananindeua</span>
-  <h1>Chaveiro em Ananindeua para casa, com&#233;rcio e carro</h1>
-  <p class="sub">Abertura de portas, c&#243;pias e troca de fechaduras. Chame pelo WhatsApp.</p>
-  <div class="botoes">
-    <a class="btn wa" href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro."><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
-    <a class="btn sec" href="tel:+5591983500002">Ligar (91) 98350-0002</a>
+<main id="inicio">
+<div class="hero">
+  <div class="foto" style="background-image:url('/img/chaveiro.jpg')"></div>
+  <div class="wrap">
+    <a class="selo" href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Bam%20Bam%2C%20Tv.%20SN%2021%2C%20Ananindeua" target="_blank" rel="noopener"><span class="est">★</span> 4,5 no Google · 16 avaliações</a>
+    <h1>Perdeu a chave ou ficou trancado? <span>A gente abre pra voc&#234;.</span></h1>
+    <p class="sub">Abertura de portas, c&#243;pias e troca de fechaduras. Chame pelo WhatsApp.</p>
+    <div class="botoes">
+      <a class="btn cor" href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro."><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
+      <a class="btn sec" href="#servicos">Ver serviços <svg><use href="#i-seta"/></svg></a>
+    </div>
+    <div class="foto-mob" style="background-image:url('/img/chaveiro.jpg')"></div>
   </div>
-  <a class="nota" href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Bam%20Bam%2C%20Tv.%20SN%2021%2C%20Ananindeua" target="_blank" rel="noopener"><b>★ 4,5</b> <span>16 avaliações no Google</span></a>
-</div></div>
+</div>
 
 <div class="faixa"><div class="wrap"><ul>
-  <li>Orçamento sem compromisso</li>
-  <li>Atendimento em Ananindeua e região</li>
-  <li>Resposta rápida pelo WhatsApp</li>
+  <li><svg><use href="#i-check"/></svg>Orçamento sem compromisso</li>
+  <li><svg><use href="#i-relogio"/></svg>Resposta rápida pelo WhatsApp</li>
+  <li><svg><use href="#i-pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Bam%20Bam%2C%20Tv.%20SN%2021%2C%20Ananindeua" target="_blank" rel="noopener">Tv. SN 21 · Ananindeua</a></li>
+  <li><svg><use href="#i-fone"/></svg><a href="tel:+5591983500002">(91) 98350-0002</a></li>
 </ul></div></div>
 
-<section><div class="wrap">
-  <h2>Serviços</h2>
-  <p class="lead">Conte o que você precisa e receba o orçamento direto no WhatsApp.</p>
-  <ul class="cards"><li><h3>Abertura de portas</h3><p>Resid&#234;ncias, com&#233;rcios e ve&#237;culos.</p></li><li><h3>C&#243;pias de chaves</h3><p>Chaves simples, tetra e codificadas.</p></li><li><h3>Troca de fechaduras</h3><p>Instala&#231;&#227;o e troca de segredo.</p></li><li><h3>Chaves automotivas</h3><p>C&#243;pia e codifica&#231;&#227;o de chaves de carro.</p></li></ul>
+<section id="servicos"><div class="wrap">
+  <div class="titulo"><h2>Nossos serviços</h2><p>Conte o que você precisa e receba o orçamento direto no WhatsApp.</p></div>
+  <ul class="cards"><li><span class="ico"><svg><use href="#i-porta"/></svg></span><div><h3>Abertura de portas</h3><p>Resid&#234;ncias, com&#233;rcios e ve&#237;culos.</p></div></li><li><span class="ico"><svg><use href="#i-chave"/></svg></span><div><h3>C&#243;pias de chaves</h3><p>Chaves simples, tetra e codificadas.</p></div></li><li><span class="ico"><svg><use href="#i-cadeado"/></svg></span><div><h3>Troca de fechaduras</h3><p>Instala&#231;&#227;o e troca de segredo.</p></div></li><li><span class="ico"><svg><use href="#i-carro"/></svg></span><div><h3>Chaves automotivas</h3><p>C&#243;pia e codifica&#231;&#227;o de chaves de carro.</p></div></li></ul>
 </div></section>
 
-<section class="passos"><div class="wrap">
-  <h2>Como funciona</h2>
-  <p class="lead">Simples e sem enrolação.</p>
+<section class="passos" id="como-funciona"><div class="wrap">
+  <div class="titulo"><h2>Como funciona</h2><p>Simples e sem enrolação.</p></div>
   <ol>
     <li><h3>Chame no WhatsApp</h3><p>Explique o problema e, se puder, mande uma foto.</p></li>
     <li><h3>Receba o orçamento</h3><p>Você fica sabendo o valor e o prazo antes de fechar.</p></li>
@@ -112,14 +190,13 @@ footer{padding:28px 0;font-size:14px;color:#7a8799;text-align:center}
   </ol>
 </div></section>
 
-<section><div class="wrap">
-  <h2>Onde estamos</h2>
-  <p class="lead">Atendemos Ananindeua e região.</p>
+<section id="localizacao"><div class="wrap">
+  <div class="titulo"><h2>Onde estamos</h2><p>Atendemos Ananindeua e região.</p></div>
   <div class="local">
-    <dl>
-      <div><dt>Endereço</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Bam%20Bam%2C%20Tv.%20SN%2021%2C%20Ananindeua" target="_blank" rel="noopener">Tv. SN 21</a></dd></div>
+    <dl class="info">
+      <div><svg><use href="#i-pin"/></svg><span><dt>Endereço</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Bam%20Bam%2C%20Tv.%20SN%2021%2C%20Ananindeua" target="_blank" rel="noopener">Tv. SN 21 · Ananindeua</a></dd></span></div>
       
-      <div><dt>Telefone e WhatsApp</dt><dd><a href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro.">(91) 98350-0002</a></dd></div>
+      <div><svg><use href="#i-fone"/></svg><span><dt>Telefone e WhatsApp</dt><dd><a href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro.">(91) 98350-0002</a></dd></span></div>
     </dl>
     <iframe class="mapa" src="https://www.google.com/maps?q=Chaveiro%20Bam%20Bam%2C%20Tv.%20SN%2021%2C%20Ananindeua&amp;output=embed" loading="lazy" title="Mapa de Chaveiro Bam Bam" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
@@ -128,11 +205,12 @@ footer{padding:28px 0;font-size:14px;color:#7a8799;text-align:center}
 <section class="final"><div class="wrap">
   <h2>Precisa de atendimento?</h2>
   <p>Fale agora com Chaveiro Bam Bam e peça seu orçamento.</p>
-  <div class="botoes"><a class="btn wa" href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro."><svg><use href="#wa"/></svg>Chamar no WhatsApp</a></div>
+  <div class="botoes"><a class="btn cor" href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro."><svg><use href="#wa"/></svg>Chamar no WhatsApp</a></div>
 </div></section>
 </main>
 
 <footer><div class="wrap">© 2026 Chaveiro Bam Bam · Ananindeua</div></footer>
+<div class="barra"></div>
 <a class="flut" href="https://wa.me/5591983500002?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20preciso%20de%20um%20chaveiro." aria-label="Chamar no WhatsApp"><svg><use href="#wa"/></svg></a>
 </body>
 </html>
