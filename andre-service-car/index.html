@@ -6,104 +6,135 @@
 <title>Andre Service Car | Oficina mec&#226;nica em Bel&#233;m</title>
 <meta name="description" content="Oficina mec&#226;nica de confian&#231;a em Bel&#233;m. Orçamento rápido pelo WhatsApp.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0a1626">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="/img/oficina.jpg">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{--fundo:#0a1626;--fundo2:#0e1d33;--card:#12243d;--linha:rgba(148,178,220,.16);--texto:#c3d0e2;--branco:#fff;--azul:#2f6fe4;--wa:#25d366;font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--texto);background:var(--fundo);overflow-x:hidden}
+body{--tinta:#14181f;--texto:#4a5361;--suave:#f4f5f7;--linha:#e4e7ec;--escuro:#15191f;--wa:#25d366;--cor-forte:color-mix(in srgb,var(--cor) 55%,#000);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--texto);background:#fff;overflow-x:hidden}
 a{color:inherit}
 svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-h1,h2,h3,.marca{font-family:Montserrat,system-ui,sans-serif;color:var(--branco)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.marca{font-family:Montserrat,system-ui,sans-serif;color:var(--tinta)}
 .demo{background:#fff4c2;color:#4d3a00;font-size:14px;padding:9px 0}
 .demo .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .demo a{background:#4d3a00;color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;font-weight:600;white-space:nowrap}
-.topo{position:sticky;top:0;z-index:20;background:rgba(10,22,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
-.topo .wrap{display:flex;align-items:center;gap:28px;height:74px}
-.marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;line-height:1.1;letter-spacing:-.01em;text-transform:uppercase;max-width:300px}
-.marca svg{width:34px;height:34px;color:var(--cor);flex:none;stroke-width:2.2}
-.menu{display:flex;gap:26px;margin-left:auto;list-style:none}
-.menu a{text-decoration:none;font-weight:600;font-size:15px;color:#dbe5f3;padding:6px 0;border-bottom:2px solid transparent}
+.info-topo{background:var(--suave);border-bottom:1px solid var(--linha);font-size:14px;font-weight:500;color:var(--tinta)}
+.info-topo .wrap{display:flex;gap:28px;align-items:center;min-height:42px;flex-wrap:wrap}
+.info-topo span{display:inline-flex;align-items:center;gap:8px}
+.info-topo svg{width:17px;height:17px;color:var(--cor-forte)}
+.info-topo a{text-decoration:none}
+.info-topo .fone{margin-left:auto;font-weight:700}
+.topo{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--linha);box-shadow:0 2px 14px rgba(20,24,31,.05)}
+.topo .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;line-height:1.1;text-transform:uppercase;letter-spacing:-.01em;max-width:320px}
+.marca .logo{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--escuro);flex:none}
+.marca .logo svg{width:26px;height:26px;color:var(--cor);stroke-width:2.2}
+.menu{display:flex;gap:28px;margin-left:auto;list-style:none}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;color:var(--tinta);padding:6px 0;border-bottom:2px solid transparent}
 .menu a:hover{border-color:var(--cor)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-family:Montserrat,system-ui,sans-serif;padding:15px 26px;border-radius:12px;font-size:16px;transition:transform .15s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;font-family:Montserrat,system-ui,sans-serif;padding:15px 26px;border-radius:10px;font-size:16px;transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-1px)}
 .btn svg{width:22px;height:22px;flex:none}
-.btn.cor{background:var(--cor);color:#0a1626;box-shadow:0 10px 30px color-mix(in srgb,var(--cor) 35%,transparent)}
-.btn.sec{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn.cor{background:var(--cor);color:#111;box-shadow:0 8px 22px color-mix(in srgb,var(--cor) 40%,transparent)}
+.btn.wa{background:var(--wa);color:#05391c;box-shadow:0 8px 22px rgba(37,211,102,.3)}
+.btn.sec{border:2px solid var(--tinta);color:var(--tinta)}
 .btn.peq{padding:11px 18px;font-size:15px}
 .wa-ico{fill:currentColor;stroke:none}
-.hero{position:relative;overflow:hidden;background:var(--fundo)}
-.hero .foto{position:absolute;inset:0 0 0 38%;background-size:cover;background-position:center}
-.hero .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--fundo) 0%,rgba(10,22,38,.6) 20%,rgba(10,22,38,0) 55%),linear-gradient(0deg,var(--fundo) 0%,transparent 25%)}
-.hero .wrap{position:relative;padding-top:64px;padding-bottom:84px}
-.selo{display:inline-flex;align-items:center;gap:8px;background:rgba(47,111,228,.18);border:1px solid rgba(97,145,235,.45);color:#fff;font-weight:600;font-size:15px;padding:8px 16px;border-radius:999px;text-decoration:none;margin-bottom:22px}
-.selo .est{color:#ffc93c;font-size:18px;line-height:1}
-h1{font-size:clamp(34px,5.4vw,60px);line-height:1.06;letter-spacing:-.025em;max-width:15ch;font-weight:800;text-shadow:0 2px 18px rgba(10,22,38,.6)}
-h1 span{display:block;color:var(--cor)}
-.sub{font-size:clamp(17px,2.2vw,20px);color:#dbe5f3;max-width:44ch;margin:22px 0 32px;padding-left:16px;border-left:3px solid var(--azul)}
+.hero{position:relative;background:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:center;padding-top:56px;padding-bottom:64px}
+.olho{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cor-forte);margin-bottom:16px}
+.olho::before{content:"";width:28px;height:3px;border-radius:2px;background:var(--cor)}
+h1{font-size:clamp(34px,4.8vw,56px);line-height:1.06;letter-spacing:-.025em;font-weight:800}
+h1 .dest{display:block;margin-top:4px}
+h1 .dest span{background:linear-gradient(transparent 58%,color-mix(in srgb,var(--cor) 70%,transparent) 58%);box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.sub{font-size:clamp(17px,2vw,19px);max-width:46ch;margin:20px 0 30px}
 .botoes{display:flex;gap:14px;flex-wrap:wrap}
-.foto-mob{display:none}
-.faixa{background:var(--fundo2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
-.faixa ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 28px;padding:22px 0}
-.faixa li{display:flex;gap:12px;align-items:center;color:#e4ecf7;font-weight:500;font-size:15px}
-.faixa li svg{width:26px;height:26px;color:var(--cor);flex:none}
-.faixa a{text-decoration:none}
-section{padding:80px 0}
-.titulo{text-align:center;margin-bottom:44px}
-.titulo h2{display:inline-flex;align-items:center;gap:22px;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.02em;line-height:1.2}
-.titulo h2::before,.titulo h2::after{content:"";width:clamp(28px,8vw,120px);height:3px;background:var(--azul);border-radius:2px}
-.titulo p{margin-top:10px}
-.cards{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.cards li{display:flex;flex-direction:column;gap:16px;background:linear-gradient(180deg,var(--card),#0f1f36);border:1px solid var(--linha);border-radius:18px;padding:26px 24px}
-.cards .ico{display:grid;place-items:center;width:58px;height:58px;border-radius:14px;background:color-mix(in srgb,var(--cor) 14%,transparent);border:1px solid color-mix(in srgb,var(--cor) 35%,transparent)}
-.cards .ico svg{width:30px;height:30px;color:var(--cor)}
+.confianca{display:flex;align-items:center;gap:10px;margin-top:26px;font-size:15px;color:var(--tinta);font-weight:600;text-decoration:none}
+.confianca .est{color:#f5b301;font-size:18px;letter-spacing:2px}
+.confianca svg{width:22px;height:22px;color:var(--cor-forte)}
+.foto{position:relative;height:100%;min-height:440px}
+.foto .img{position:absolute;inset:0;border-radius:22px;background-size:cover;background-position:center;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%);box-shadow:0 30px 60px rgba(20,24,31,.18)}
+.foto .tag{position:absolute;left:4%;bottom:26px;display:flex;align-items:center;gap:12px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 14px 34px rgba(20,24,31,.18);font-size:14px;color:var(--tinta);font-weight:600;max-width:260px}
+.foto .tag b{display:block;font:800 17px Montserrat,sans-serif}
+.foto .tag .i{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:var(--cor);flex:none}
+.foto .tag svg{width:22px;height:22px;color:#111}
+.difs{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);background:#fff}
+.difs ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px 28px;padding:24px 0}
+.difs li{display:flex;gap:12px;align-items:center;font-weight:600;color:var(--tinta);font-size:15px}
+.difs li svg{width:30px;height:30px;color:var(--cor-forte);flex:none}
+section{padding:84px 0}
+.titulo{text-align:center;margin-bottom:46px}
+.titulo .olho{justify-content:center}
+.titulo .olho::after{content:"";width:28px;height:3px;border-radius:2px;background:var(--cor)}
+.titulo h2{font-size:clamp(26px,3.6vw,40px);letter-spacing:-.02em;line-height:1.15}
+.titulo p{margin-top:10px;max-width:60ch;margin-left:auto;margin-right:auto}
+.servicos{background:var(--escuro);color:#c5ccd6;clip-path:polygon(0 0,100% 40px,100% 100%,0 calc(100% - 40px));padding:120px 0}
+.servicos h2,.servicos h3{color:#fff}
+.servicos .olho{color:var(--cor)}
+.cards{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.cards li{display:flex;flex-direction:column;gap:16px;background:#1d222a;border:1px solid #2a3039;border-radius:16px;padding:28px 24px;transition:transform .15s}
+.cards li:hover{transform:translateY(-3px)}
+.cards .ico{display:grid;place-items:center;width:60px;height:60px;border-radius:14px;background:var(--cor)}
+.cards .ico svg{width:30px;height:30px;color:#111}
 .cards h3{font-size:19px;line-height:1.25;margin-bottom:6px}
 .cards p{font-size:15px}
-.passos{background:var(--fundo2);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.depo ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.depo li{display:flex;flex-direction:column;gap:16px;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 26px;box-shadow:0 10px 30px rgba(20,24,31,.06);position:relative}
+.depo li::before{content:"\201C";position:absolute;top:10px;right:22px;font:800 70px/1 Montserrat,serif;color:color-mix(in srgb,var(--cor) 55%,transparent)}
+.estrelas{color:#f5b301;font-size:20px;letter-spacing:3px}
+.depo blockquote{color:var(--tinta);font-size:16px;line-height:1.65;flex:1}
+.autor{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--linha)}
+.autor .av{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--escuro);color:var(--cor);font:700 17px Montserrat,sans-serif;flex:none}
+.autor b{display:block;color:var(--tinta);font-size:15px}
+.autor small{display:block;color:#7b8494;font-size:13px}
+.depo .mais{text-align:center;margin-top:30px}
+.depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-.passos li{counter-increment:p;position:relative;padding:26px 24px;border-radius:18px;border:1px solid var(--linha);background:var(--fundo)}
-.passos li::before{content:counter(p);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--cor);color:#0a1626;font:800 18px Montserrat,sans-serif;margin-bottom:14px}
+.passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
+.passos li::before{content:counter(p);display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--cor);color:#111;font:800 19px Montserrat,sans-serif;margin-bottom:14px}
 .passos h3{font-size:18px;margin-bottom:4px}
 .local{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:28px;align-items:stretch}
 .info{display:grid;gap:14px;align-content:start}
-.info div{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:18px 20px}
-.info svg{width:26px;height:26px;color:var(--cor);flex:none;margin-top:2px}
-.info dt{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#8ea3bf}
-.info dd{color:#fff;font-weight:600;font-size:17px}
+.info div{display:flex;gap:14px;align-items:flex-start;background:var(--suave);border-radius:14px;padding:18px 20px}
+.info svg{width:26px;height:26px;color:var(--cor-forte);flex:none;margin-top:2px}
+.info dt{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7b8494}
+.info dd{color:var(--tinta);font-weight:600;font-size:17px}
 .info dd a{text-decoration:underline;text-underline-offset:3px}
-.mapa{width:100%;min-height:340px;height:100%;border:0;border-radius:18px;background:var(--card);filter:saturate(.85)}
-.final{position:relative;overflow:hidden;text-align:center;background:radial-gradient(700px 300px at 50% 0%,color-mix(in srgb,var(--cor) 22%,transparent),transparent 70%),var(--fundo2);border-top:1px solid var(--linha)}
-.final h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:12px}
-.final p{margin-bottom:28px}
+.mapa{width:100%;min-height:340px;height:100%;border:0;border-radius:16px;background:var(--suave)}
+.final{background:var(--cor);text-align:center;padding:72px 0}
+.final h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:10px;color:#111}
+.final p{margin-bottom:26px;color:#2b2b2b;font-weight:500}
 .final .botoes{justify-content:center}
-footer{padding:26px 0;font-size:14px;color:#7f93ae;text-align:center;border-top:1px solid var(--linha)}
-.barra{height:5px;background:linear-gradient(90deg,var(--azul) 0%,var(--azul) 45%,transparent 45%)}
-.flut{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.35);z-index:30}
-.flut svg{width:32px;height:32px;color:#04361b}
+.final .btn{background:#111;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.25)}
+footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:var(--escuro)}
+.flut{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28);z-index:30}
+.flut svg{width:32px;height:32px;color:#05391c}
 @media(max-width:900px){
+  .info-topo .esconde{display:none}
   .menu{display:none}
   .topo .btn.peq{margin-left:auto}
-  .hero .foto{display:none}
-  .hero .wrap{padding-top:36px;padding-bottom:0}
-  .foto-mob{display:block;margin:30px -20px 0;height:250px;background-size:cover;background-position:center;position:relative}
-  .foto-mob::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--fundo) 0%,transparent 35%,transparent 70%,var(--fundo) 100%)}
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:34px;padding-bottom:40px}
+  .foto{min-height:260px}
+  .foto .img{clip-path:none}
   .local{grid-template-columns:1fr}
   .mapa{height:300px;min-height:0}
+  .servicos{clip-path:polygon(0 0,100% 20px,100% 100%,0 calc(100% - 20px));padding:80px 0}
 }
 @media(max-width:560px){
+  .info-topo{display:none}
   .topo .wrap{height:64px;gap:12px}
   .marca{font-size:15px}
-  .marca svg{width:28px;height:28px}
+  .marca .logo{width:38px;height:38px}
   .topo .btn.peq span{display:none}
   .topo .btn.peq{padding:10px 12px}
   .botoes .btn{width:100%}
-  .hero .btn.cor{background:var(--wa);color:#04361b;box-shadow:0 10px 30px rgba(37,211,102,.3)}
-  section{padding:56px 0}
-  .titulo h2{gap:12px}
+  .hero .btn.cor{background:var(--wa);color:#05391c;box-shadow:0 8px 22px rgba(37,211,102,.3)}
+  section{padding:60px 0}
 }
 </style>
 </head>
@@ -135,6 +166,7 @@ footer{padding:26px 0;font-size:14px;color:#7f93ae;text-align:center;border-top:
 <symbol id="i-fone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></symbol>
 <symbol id="i-seta" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+<symbol id="i-balao" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></symbol>
 </svg>
 
 
@@ -144,10 +176,17 @@ footer{padding:26px 0;font-size:14px;color:#7f93ae;text-align:center;border-top:
 </div></div>
 
 
+<div class="info-topo"><div class="wrap">
+  <span><svg><use href="#i-relogio"/></svg>Atendimento pelo WhatsApp</span>
+  <span class="esconde"><svg><use href="#i-pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Passagem G, 32 · Bel&#233;m</a></span>
+  <a class="fone" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro."><span><svg><use href="#i-fone"/></svg>(91) 98106-3310</span></a>
+</div></div>
+
 <header class="topo"><div class="wrap">
-  <a class="marca" href="#inicio"><svg><use href="#i-ferramenta"/></svg><span>Andre Service Car</span></a>
+  <a class="marca" href="#inicio"><span class="logo"><svg><use href="#i-ferramenta"/></svg></span><span>Andre Service Car</span></a>
   <ul class="menu">
     <li><a href="#servicos">Serviços</a></li>
+    
     <li><a href="#como-funciona">Como funciona</a></li>
     <li><a href="#localizacao">Localização</a></li>
   </ul>
@@ -155,34 +194,38 @@ footer{padding:26px 0;font-size:14px;color:#7f93ae;text-align:center;border-top:
 </div></header>
 
 <main id="inicio">
-<div class="hero">
-  <div class="foto" style="background-image:url('/img/oficina.jpg')"></div>
-  <div class="wrap">
-    <a class="selo" href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener"><span class="est">★</span> 4,5 no Google · 44 avaliações</a>
-    <h1>Carro fazendo barulho estranho? <span>A gente descobre e resolve.</span></h1>
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="olho">Oficina mec&#226;nica em Bel&#233;m</span>
+    <h1>Carro fazendo barulho estranho? <span class="dest"><span>A gente descobre e resolve.</span></span></h1>
     <p class="sub">Revis&#227;o, freios, suspens&#227;o e motor, com or&#231;amento explicado antes de qualquer servi&#231;o.</p>
     <div class="botoes">
       <a class="btn cor" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro."><svg><use href="#wa"/></svg>Pedir orçamento no WhatsApp</a>
       <a class="btn sec" href="#servicos">Ver serviços <svg><use href="#i-seta"/></svg></a>
     </div>
-    <div class="foto-mob" style="background-image:url('/img/oficina.jpg')"></div>
+    
+    <a class="confianca" href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener"><svg><use href="#i-balao"/></svg>44 clientes avaliaram no Google</a>
   </div>
-</div>
+  <div class="foto"><div class="img" style="background-image:url('/img/oficina.jpg')"></div>
+    <div class="tag"><span class="i"><svg><use href="#i-check"/></svg></span><span><b>Orçamento antes</b>de qualquer serviço</span></div>
+  </div>
+</div></div>
 
-<div class="faixa"><div class="wrap"><ul>
-  <li><svg><use href="#i-check"/></svg>Orçamento sem compromisso</li>
-  <li><svg><use href="#i-relogio"/></svg>Resposta rápida pelo WhatsApp</li>
-  <li><svg><use href="#i-pin"/></svg><a href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Passagem G, 32 · Bel&#233;m</a></li>
-  <li><svg><use href="#i-fone"/></svg><a href="tel:+5591981063310">(91) 98106-3310</a></li>
+<div class="difs"><div class="wrap"><ul>
+  <li><svg><use href="#i-escudo"/></svg>Serviço feito com transparência</li>
+  <li><svg><use href="#i-balao"/></svg>Orçamento rápido pelo WhatsApp</li>
+  <li><svg><use href="#i-pin"/></svg>Atendimento em Bel&#233;m e região</li>
 </ul></div></div>
 
-<section id="servicos"><div class="wrap">
-  <div class="titulo"><h2>Nossos serviços</h2><p>Conte o que você precisa e receba o orçamento direto no WhatsApp.</p></div>
+<section class="servicos" id="servicos"><div class="wrap">
+  <div class="titulo"><span class="olho">O que fazemos</span><h2>Nossos serviços</h2><p>Conte o que você precisa e receba o orçamento direto no WhatsApp.</p></div>
   <ul class="cards"><li><span class="ico"><svg><use href="#i-oleo"/></svg></span><div><h3>Revis&#227;o e troca de &#243;leo</h3><p>Manuten&#231;&#227;o preventiva para rodar tranquilo.</p></div></li><li><span class="ico"><svg><use href="#i-freio"/></svg></span><div><h3>Freios</h3><p>Pastilhas, discos e fluido.</p></div></li><li><span class="ico"><svg><use href="#i-mola"/></svg></span><div><h3>Suspens&#227;o e dire&#231;&#227;o</h3><p>Amortecedores, buchas e alinhamento.</p></div></li><li><span class="ico"><svg><use href="#i-diag"/></svg></span><div><h3>Motor e inje&#231;&#227;o</h3><p>Diagn&#243;stico por scanner e reparo.</p></div></li></ul>
 </div></section>
 
+
+
 <section class="passos" id="como-funciona"><div class="wrap">
-  <div class="titulo"><h2>Como funciona</h2><p>Simples e sem enrolação.</p></div>
+  <div class="titulo"><span class="olho">Simples e sem enrolação</span><h2>Como funciona</h2></div>
   <ol>
     <li><h3>Chame no WhatsApp</h3><p>Explique o problema e, se puder, mande uma foto.</p></li>
     <li><h3>Receba o orçamento</h3><p>Você fica sabendo o valor e o prazo antes de fechar.</p></li>
@@ -191,26 +234,25 @@ footer{padding:26px 0;font-size:14px;color:#7f93ae;text-align:center;border-top:
 </div></section>
 
 <section id="localizacao"><div class="wrap">
-  <div class="titulo"><h2>Onde estamos</h2><p>Atendemos Bel&#233;m e região.</p></div>
+  <div class="titulo"><span class="olho">Venha até nós</span><h2>Onde estamos</h2><p>Atendemos Bel&#233;m e região.</p></div>
   <div class="local">
     <dl class="info">
       <div><svg><use href="#i-pin"/></svg><span><dt>Endereço</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Passagem G, 32 · Bel&#233;m</a></dd></span></div>
       
       <div><svg><use href="#i-fone"/></svg><span><dt>Telefone e WhatsApp</dt><dd><a href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro.">(91) 98106-3310</a></dd></span></div>
     </dl>
-    <iframe class="mapa" src="https://www.google.com/maps?q=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m&amp;output=embed" loading="lazy" title="Mapa de Andre Service Car" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="mapa" src="https://www.google.com/maps?q=Passagem%20G%2C%2032%2C%20Bel%C3%A9m&amp;output=embed" loading="lazy" title="Mapa de Andre Service Car" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div></section>
 
 <section class="final"><div class="wrap">
   <h2>Precisa de atendimento?</h2>
   <p>Fale agora com Andre Service Car e peça seu orçamento.</p>
-  <div class="botoes"><a class="btn cor" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro."><svg><use href="#wa"/></svg>Chamar no WhatsApp</a></div>
+  <div class="botoes"><a class="btn" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro."><svg><use href="#wa"/></svg>Chamar no WhatsApp</a></div>
 </div></section>
 </main>
 
 <footer><div class="wrap">© 2026 Andre Service Car · Bel&#233;m</div></footer>
-<div class="barra"></div>
 <a class="flut" href="https://wa.me/5591981063310?text=Ol%C3%A1!%20Encontrei%20voc%C3%AAs%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro." aria-label="Chamar no WhatsApp"><svg><use href="#wa"/></svg></a>
 </body>
 </html>
