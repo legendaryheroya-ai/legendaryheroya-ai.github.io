@@ -3,3 +3,8 @@ oficina.jpg         https://www.pexels.com/photo/8478234/
 auto-eletrica.jpg   https://www.pexels.com/photo/13065692/
 ar-condicionado.jpg https://www.pexels.com/photo/7347538/
 chaveiro.jpg        https://www.pexels.com/photo/35578808/
+dentista.jpg        https://www.pexels.com/photo/5622242/
+estetica.jpg        https://www.pexels.com/photo/7446659/
+energia-solar.jpg   https://www.pexels.com/photo/9875418/
+transformadores.jpg https://www.pexels.com/photo/13820151/
+veterinaria.jpg     https://www.pexels.com/photo/6234633/
