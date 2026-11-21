@@ -8,3 +8,5 @@ estetica.jpg        https://www.pexels.com/photo/7446659/
 energia-solar.jpg   https://www.pexels.com/photo/9875418/
 transformadores.jpg https://www.pexels.com/photo/13820151/
 veterinaria.jpg     https://www.pexels.com/photo/6234633/
+borracharia.jpg     https://www.pexels.com/photo/3806249/
+bicicletaria.jpg    https://www.pexels.com/photo/132682/
