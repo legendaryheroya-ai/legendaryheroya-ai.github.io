@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Com certeza eu indico um excelente trabalho reconhe&#231;o que n&#227;o &#233; f&#225;cil e um pre&#231;o justo foi al&#233;m do que eu esperava parab&#233;ns</blockquote><div class="autor"><span class="av">F</span><span><b>Franklin G.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 ano</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Excelente trabalho, &#243;timo atendimento e pre&#231;o justo!</blockquote><div class="autor"><span class="av">J</span><span><b>Jean L.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 2 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Muito atencioso. Excelente servi&#231;o.</blockquote><div class="autor"><span class="av">A</span><span><b>Andr&#233; A.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 5 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Felix%2C%20Av.%20Zacarias%20de%20Assun%C3%A7%C3%A3o%2C%20158%20A%2C%20Ananindeua" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

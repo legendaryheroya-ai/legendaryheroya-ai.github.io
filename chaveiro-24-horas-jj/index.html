@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Precisei de um servi&#231;o &#224;s 22:30 da noite de um domingo e ele foi ao local e resolveu este problema. Super indico!</blockquote><div class="autor"><span class="av">S</span><span><b>Sarah L.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 m&#234;s</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Servi&#231;o r&#225;pido e de qualidade! Chegou r&#225;pido e com v&#225;rias solu&#231;&#245;es pra resolver o problema. Obrigado pelo servi&#231;o prestado</blockquote><div class="autor"><span class="av">P</span><span><b>Paulo M.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 4 meses</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Servi&#231;o bem feito! JJ arrasou no servi&#231;o. Podem confiar. Trocou a fechadura.</blockquote><div class="autor"><span class="av">B</span><span><b>Bianca C.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 m&#234;s</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%2024%20horas%20JJ%2C%20Av.%20Principal%20do%20Aur%C3%A1%2C%20quadra%2008%2C%20Ananindeua" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

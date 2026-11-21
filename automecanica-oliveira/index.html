@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Oficina pra qualquer tipo de servi&#231;o: mec&#226;nica, el&#233;trica, funilaria, pintura, suspens&#227;o, freios... Pre&#231;o, qualidade e excelentes profissionais.</blockquote><div class="autor"><span class="av">S</span><span><b>Saulo</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 3 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>O melhor da Pedreira, muito respons&#225;vel e com pre&#231;o acess&#237;vel.</blockquote><div class="autor"><span class="av">M</span><span><b>Moises N.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 2 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>J&#225; fiz servi&#231;o de pintura e lanternagem tr&#234;s vezes, com Robson e com seu Oliveira, muito recomendado!</blockquote><div class="autor"><span class="av">R</span><span><b>Rodrigo C.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 7 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Automec%C3%A2nica%20Oliveira%2C%20Tv.%20Timb%C3%B3%2C%201360%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

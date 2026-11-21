@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Somos novos na cidade, ocorreu um imprevisto com nosso carro e achamos o Thiago aqui pelo Google. Ele foi muito sol&#237;cito, emp&#225;tico e nos ajudou prontamente, muito bom encontrar pessoas assim. Recomendamos!</blockquote><div class="autor"><span class="av">G</span><span><b>Giovanna A.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 ano</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>O Thiago &#233; muito atencioso e tem um di&#225;logo muito bom e explicativo sobre cada detalhe do servi&#231;o que ele executa no carro.</blockquote><div class="autor"><span class="av">R</span><span><b>Roque F.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 5 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Bom, qualificado, recomendo pela experi&#234;ncia que tive, pode confiar no servi&#231;o do Thiago.</blockquote><div class="autor"><span class="av">A</span><span><b>Alex S.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 3 meses</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Thiago%20Auto%20Mec%C3%A2nica%2C%20Tv.%20WE%2068%2C%20401b%2C%20Ananindeua" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

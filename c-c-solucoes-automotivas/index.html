@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Sempre levo meus carros para fazer a revis&#227;o no local, sempre muito bem cuidado pela equipe de mec&#226;nicos. Uma das poucas (se n&#227;o for a &#250;nica) que se preocupa em zelar o carro dos clientes como se fossem deles, colocam desde pl&#225;sticos protetores nos bancos e volantes, at&#233; um check up geral em todos os itens do carro!</blockquote><div class="autor"><span class="av">V</span><span><b>Vitor M.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 2 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Excelente ambiente de trabalho, mec&#226;nicos altamente qualificados e honestos nos servi&#231;os, fui muito bem atendido, agrade&#231;o a aten&#231;&#227;o e profissionalismo de todos, muit&#237;ssimo obrigado</blockquote><div class="autor"><span class="av">A</span><span><b>Antonio M.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 m&#234;s</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Excelente qualidade de servi&#231;o, atendimento fora de s&#233;rie e muita compet&#234;ncia no que faz. Indico de olhos fechados.</blockquote><div class="autor"><span class="av">I</span><span><b>Izabel C.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 2 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=C%26C%20Solu%C3%A7%C3%B5es%20Automotivas%2C%20Tv.%20Angustura%2C%202265%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -232,6 +236,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <div class="titulo"><span class="olho">O que fazemos</span><h2>Nossos serviços</h2><p>Conte o que você precisa e receba o orçamento direto no WhatsApp.</p></div>
   <ul class="cards"><li><span class="ico"><svg><use href="#i-oleo"/></svg></span><div><h3>Revis&#227;o e troca de &#243;leo</h3><p>Manuten&#231;&#227;o preventiva para rodar tranquilo.</p></div></li><li><span class="ico"><svg><use href="#i-freio"/></svg></span><div><h3>Freios</h3><p>Pastilhas, discos e fluido.</p></div></li><li><span class="ico"><svg><use href="#i-mola"/></svg></span><div><h3>Suspens&#227;o e dire&#231;&#227;o</h3><p>Amortecedores, buchas e alinhamento.</p></div></li><li><span class="ico"><svg><use href="#i-diag"/></svg></span><div><h3>Motor e inje&#231;&#227;o</h3><p>Diagn&#243;stico por scanner e reparo.</p></div></li></ul>
 </div></section>
+
+
 
 
 

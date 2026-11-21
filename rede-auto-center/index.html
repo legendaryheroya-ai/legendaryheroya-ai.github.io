@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Excelente atendimento e qualidade do servi&#231;o. Profissionais competentes. Melhor que a concession&#225;ria.</blockquote><div class="autor"><span class="av">H</span><span><b>Haroldo P.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 6 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>O melhor servi&#231;o da cidade. Bons profissionais e servi&#231;o de &#243;tima qualidade.</blockquote><div class="autor"><span class="av">J</span><span><b>J&#250;lio S.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 4 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&#211;tima oficina, excelentes profissionais!</blockquote><div class="autor"><span class="av">H</span><span><b>Hermann F.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 4 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Rede%20Auto%20Center%2C%20Tv.%20Bar%C3%A3o%20do%20Triunfo%2C%201870A%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

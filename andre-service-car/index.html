@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Atendimento 10, resolveu o problema em menos de 1h e foi certeiro onde era, sem enrola&#231;&#227;o, simples e r&#225;pido. Recomendo.</blockquote><div class="autor"><span class="av">C</span><span><b>Caroline M.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 ano</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Oficina muito boa. Estava com muita dificuldade em encontrar alguma oficina confi&#225;vel, tive a oportunidade de receber a indica&#231;&#227;o do Andre Service Car. Trabalho de &#243;tima qualidade e profissionais super atenciosos. Quem procura qualidade est&#225; no local certo.</blockquote><div class="autor"><span class="av">A</span><span><b>Anderson B.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 3 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Oficina top, lugar onde voc&#234; realmente pode confiar. Os mec&#226;nicos s&#243; mexem no seu carro se realmente tiver algo para fazer, l&#225; n&#227;o existe aquele neg&#243;cio de condenar pe&#231;as.</blockquote><div class="autor"><span class="av">W</span><span><b>Wilson L.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 6 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Andre%20Service%20Car%2C%20Passagem%20G%2C%2032%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

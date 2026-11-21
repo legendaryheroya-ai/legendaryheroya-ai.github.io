@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Melhor centro mec&#226;nico de Bel&#233;m, profissionais altamente &#233;ticos e transparentes!</blockquote><div class="autor"><span class="av">D</span><span><b>Daniel P.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 3 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Servi&#231;o bem executado com mec&#226;nicos honestos e pre&#231;o justo, recomendo!!</blockquote><div class="autor"><span class="av">M</span><span><b>Moises C.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 7 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Pessoal experiente, competente e honesto.</blockquote><div class="autor"><span class="av">A</span><span><b>Anderson G.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 7 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Oficina%20Par%C3%A1%2C%20Tv.%20Mauriti%2C%20760%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

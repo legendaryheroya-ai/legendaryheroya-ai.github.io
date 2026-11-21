@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Profissionais capacitados para realizar reparos de qualidade. Explicando os servi&#231;os a serem feitos. Boa comunica&#231;&#227;o com cliente, explicando os servi&#231;os e dando garantias, or&#231;amento detalhado. Sempre fui bem atendido.</blockquote><div class="autor"><span class="av">F</span><span><b>Fl&#225;vio N.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 1 ano</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>&#211;timo atendimento e transpar&#234;ncia no fornecimento dos servi&#231;os. Recomendo.</blockquote><div class="autor"><span class="av">J</span><span><b>Jos&#233; R.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 4 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Oficina com profissionais qualificados e atendimento nota 10000...super indico ...parab&#233;ns sou cliente fiel</blockquote><div class="autor"><span class="av">L</span><span><b>Luis L.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 3 anos</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Oficina%20do%20L%C3%A9o%20Car%2C%20R.%20Paulo%20Fonteles%2C%20181%2C%20Ananindeua" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

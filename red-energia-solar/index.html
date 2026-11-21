@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -239,6 +243,8 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Projeto de energia solar residencial em Ananindeua &#233; com a RED! Cumpre com todos os prazos. Tem um &#243;timo suporte! Resolvem toda a burocracia necess&#225;ria para ativar o projeto de gera&#231;&#227;o pr&#243;pria de energia el&#233;trica.</blockquote><div class="autor"><span class="av">R</span><span><b>Ruan G.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 10 meses</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Excelente atendimento, foram muito r&#225;pidos: desde o contrato at&#233; a homologa&#231;&#227;o da Equatorial, todo o processo n&#227;o levou 30 dias, t&#244; muito grato.</blockquote><div class="autor"><span class="av">R</span><span><b>Reginaldo Q.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 8 meses</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Fiquei muito satisfeito com o p&#243;s-venda do suporte da Red Energia Solar, que me passou todas as informa&#231;&#245;es de forma clara, com muita educa&#231;&#227;o e transpar&#234;ncia, desde o recebimento do material, instala&#231;&#227;o e homologa&#231;&#227;o junto &#224; Equatorial at&#233; o aplicativo para acompanhar a gera&#231;&#227;o de energia.</blockquote><div class="autor"><span class="av">F</span><span><b>Felipe C.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 7 meses</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=RED%20Energia%20Solar%2C%20Estr.%20do%20Guajar%C3%A1%2C%201282%2C%20Ananindeua" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">
