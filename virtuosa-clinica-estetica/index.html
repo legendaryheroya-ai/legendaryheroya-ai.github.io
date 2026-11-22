@@ -95,6 +95,10 @@ section{padding:84px 0}
 .autor small{display:block;color:#7b8494;font-size:13px}
 .depo .mais{text-align:center;margin-top:30px}
 .depo .mais a{color:var(--tinta);font-weight:700;text-underline-offset:4px}
+.galeria{padding-top:0}
+.galeria ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(20,24,31,.08)}
+@media(max-width:560px){.galeria ul{grid-template-columns:repeat(2,1fr);gap:10px}}
 .passos{background:var(--suave)}
 .passos ol{list-style:none;counter-reset:p;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
 .passos li{counter-increment:p;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:28px 24px}
@@ -175,6 +179,7 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
 <symbol id="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
 <symbol id="i-painel" viewBox="0 0 24 24"><path d="M4 4h16l-2 10H6zM6 14l-1 6M18 14l1 6M12 4v10M5 9h14M9 20h6"/></symbol>
 <symbol id="i-fabrica" viewBox="0 0 24 24"><path d="M3 21V10l5 3V10l5 3V10l5 3V4h3v17zM7 17h2M12 17h2M17 17h2"/></symbol>
+<symbol id="i-tesoura" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></symbol>
 <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h2M14 14h2M8 18h2"/></symbol>
 </svg>
 
@@ -237,6 +242,7 @@ footer{padding:26px 0;font-size:14px;color:#9aa3b2;text-align:center;background:
   <ul><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Tive uma experi&#234;ncia incr&#237;vel na Virtuosa, desde a recep&#231;&#227;o at&#233; meu procedimento. Tudo com muito profissionalismo, cuidado e aten&#231;&#227;o. Me senti valorizada, orientada e confiante no tratamento. Vida longa &#224; cl&#237;nica!!</blockquote><div class="autor"><span class="av">D</span><span><b>Drielle A.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 8 meses</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Atendimento fant&#225;stico desde a recep&#231;&#227;o, profissionais simp&#225;ticas e acess&#237;veis tornam a experi&#234;ncia muito agrad&#225;vel e motivadora. Excelentes instala&#231;&#245;es, confort&#225;veis, bonitas e bem equipadas.</blockquote><div class="autor"><span class="av">S</span><span><b>Suzi S.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 3 anos</small></span></div></li><li><div class="estrelas" aria-label="5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Atendimento maravilhoso! Espa&#231;o agrad&#225;vel, profissionais de qualidade. Recomendo.</blockquote><div class="autor"><span class="av">L</span><span><b>Lorena S.</b><small>Avalia&#231;&#227;o no Google &#183; h&#225; 5 meses</small></span></div></li></ul>
   <p class="mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=Virtuosa%20Cl%C3%ADnica%20Est%C3%A9tica%2C%20Tv.%20Alm.%20Wandenkolk%2C%201020%2C%20Bel%C3%A9m" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
 </div></section>
+
 
 
 <section class="passos" id="como-funciona"><div class="wrap">

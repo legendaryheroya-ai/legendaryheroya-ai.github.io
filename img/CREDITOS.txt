@@ -10,3 +10,5 @@ transformadores.jpg https://www.pexels.com/photo/13820151/
 veterinaria.jpg     https://www.pexels.com/photo/6234633/
 borracharia.jpg     https://www.pexels.com/photo/3806249/
 bicicletaria.jpg    https://www.pexels.com/photo/132682/
+salao.jpg           https://www.pexels.com/photo/3993320/
+barbearia.jpg       https://www.pexels.com/photo/12464843/
